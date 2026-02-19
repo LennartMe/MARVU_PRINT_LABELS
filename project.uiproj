@@ -1,0 +1,6 @@
+{
+  "Name": "Print Labels",
+  "ProjectType": "Process",
+  "Description": "Process to print Labels according to dfferent filters on the BOM structure on an Altec Label printer.",
+  "MainFile": "Main.xaml"
+}

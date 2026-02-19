@@ -1,0 +1,98 @@
+﻿{
+  "Metadata": {
+    "Id": "f61686b6-6bf6-4abb-b5c6-abd53209d370",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "Formulier Label automatisering",
+    "Theme": "Cosmo",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "Marvu",
+        "customClass": ".center {   margin: auto;   width: 50%;   border: 3px solid green;   padding: 10px; }",
+        "key": "container",
+        "type": "container",
+        "input": true,
+        "tableView": false,
+        "components": [
+          {
+            "label": "Selecteer filter type",
+            "widget": "choicesjs",
+            "tableView": true,
+            "data": {
+              "values": [
+                {
+                  "label": "LS Artikelen",
+                  "value": "LS Artikelen"
+                },
+                {
+                  "label": "Plaatwerk",
+                  "value": "plaatwerk"
+                },
+                {
+                  "label": "Beide",
+                  "value": "Beide"
+                }
+              ]
+            },
+            "validate": {
+              "required": true,
+              "onlyAvailableItems": true
+            },
+            "key": "FilterType",
+            "type": "select",
+            "input": true
+          },
+          {
+            "label": "Ordernummer en bonnummer",
+            "placeholder": "Voer het ordernummer en bonnummer in",
+            "tableView": true,
+            "validate": {
+              "required": true
+            },
+            "key": "OrderAndBonNr",
+            "type": "textfield",
+            "input": true
+          },
+          {
+            "label": "Artikel",
+            "placeholder": "Voer het artikelnummer in",
+            "tableView": true,
+            "validate": {
+              "required": true
+            },
+            "key": "ArticleNr",
+            "type": "textfield",
+            "input": true
+          },
+          {
+            "label": "Aantal",
+            "placeholder": "Voer het aantal in",
+            "tableView": true,
+            "validate": {
+              "required": true,
+              "pattern": "^[0-9]*$"
+            },
+            "errorLabel": "Please insert a quantity",
+            "key": "Quantity",
+            "type": "textfield",
+            "input": true
+          },
+          {
+            "type": "button",
+            "label": "Submit",
+            "key": "submit",
+            "disableOnInvalid": true,
+            "input": true,
+            "tableView": false
+          }
+        ]
+      }
+    ]
+  }
+}

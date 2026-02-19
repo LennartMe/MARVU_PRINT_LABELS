@@ -1,0 +1,185 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Print_Labels" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1204,827" sap2010:WorkflowViewState.IdRef="Print_Labels_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Print_Labels" sap:VirtualizedContainerService.HintSize="450,255" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:UiElement" Name="UI_Qlickprint" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="2">
+      <ui:RetryScope.ActivityBody>
+        <ActivityAction>
+          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="546,871" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Application: QlickPrint - NL - [Template Bon]" sap:VirtualizedContainerService.HintSize="484,760" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" OutUiElement="[UI_Qlickprint]" ScopeGuid="5b549997-fb05-4bfa-a9d2-dbe29edb9077" Timeout="30" Version="V2" WindowResize="Maximize">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,469" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Afdrukken'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5b549997-fb05-4bfa-a9d2-dbe29edb9077" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="47849d38-993c-4466-afc3-218ff9c210cf" CvTextArea="15, 113, 51, 12" CvTextArgument="Afdrukken" CvType="Text" DesignTimeRectangle="15, 113, 51, 12" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Afdrukken'" Guid="9c700406-1903-445a-869a-e6125337f4a9" InformativeScreenshot="5b7131aa6803fb96e6a8b8663002a0c7.png" ScopeSelectorArgument="&lt;wnd app='qlickprint.exe' cls='TfrmMain' title='QlickPrint - NL - [Template Bon]' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="5, 68, 290, 86" FriendlyName="'Bestand'" FullSelectorArgument="&lt;wnd cls='TbsRibbonGroup' title='Bestand' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TbsRibbonGroup' title='Bestand' check:text='Bestand' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'Afdrukken'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5b549997-fb05-4bfa-a9d2-dbe29edb9077" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="595, 951, 142, 55" DesignTimeScaleFactor="1" FriendlyName="'Afdrukken'" FullSelectorArgument="&lt;wnd cls='TfrmPrintDialog' title='Afdrukken' /&gt;&lt;wnd cls='TbsSkinPanel' title='pnlControls' /&gt;&lt;wnd cls='TbsSkinButton' title='Afdrukken' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;wnd cls='TfrmPrintDialog' title='Afdrukken' /&gt;&lt;wnd cls='TbsSkinPanel' title='pnlControls' /&gt;&lt;wnd cls='TbsSkinButton' title='Afdrukken' check:text='Afdrukken' /&gt;" Guid="1c271b53-c44d-42fe-8867-19ecbfd87b2f" ImageBase64="" InformativeScreenshot="a466bccf9fbbfe541dce1209dc801665.png" ScopeSelectorArgument="&lt;wnd app='qlickprint.exe' cls='TfrmMain' title='QlickPrint - NL - [Template Bon]' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 1920, 1040" FilePath="C:\Program Files (x86)\QlickPrint\qlickprint.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAICSURBVFhH7VdNSwJRFB0IxIV7C9u1jeo/jL9GQfsXfezKygSzokWKW3e1CAo3bSpC/CgqiCjzo40ao1575+WzGRlExzcJ0YEDOnPfPefdGd7cqwg4nU6FiLyM14x2Abm90DJAVdUZdiPJqCHKZkAjCU0u3t05xDna7TY1mk2qaZpUIidy65Dkleh0Oig733m10aDgyTl5tg5JWdmWSuREbmh0AU0VBm7wr9VqUfD0wnSxTMJE66cS1zDQwa+G1mQuD0wXySQ0oCXQM1Bnz8lswdTqDjnWwpaItWY5oSUw0MBc+IgSmTylCg+WiLXI0Z93KANwn8gUeNA4QI7+SgxlwLG+S6m7Rx40DpADufS5LRnI5XIUCATI5/MNJGIQKyDNABKzc2soIlZAmgG/398TYCcYuVwuA3FN3EesgHQDEIpEIpROpw3ENWHCVgPYLQT7gWu492/g7xuY+EsoTGC3egpx2wxM/CCa+FFsFVevRfKEjI3OUAZkfY7RiGZLZXJvxkYzAI7TkOTLVS4gcPb0TNOh/dEMgFZbsoVonN5rdS4CoBL3lQ9yb8TMDdjRlC7txem2WOJCApcvb6SxDlwABmxty+ejx2wW+ORiJuBtuWEwWWZ9+6zkwWSRVSJbqkBCD2iqvzaaNXVl7+J7NAMmOpwKwA0eB94JRruA3LrxXFG+AGFA4Nfeh0YqAAAAAElFTkSuQmCC" InformativeScreenshot="467b4d513c16e45b19eee4bcdc809519.png" Selector="&lt;wnd app='qlickprint.exe' cls='TfrmMain' title='QlickPrint - NL - [Template Bon]' /&gt;" Title="QlickPrint - NL - [Template Bon]" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:RetryScope.ActivityBody>
+      <ui:RetryScope.Condition>
+        <ActivityFunc x:TypeArguments="x:Boolean" />
+      </ui:RetryScope.Condition>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:RetryScope>
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Always" DisplayName="Use Application: QlickPrint - NL - [Template Bon]" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InUiElement="[UI_Qlickprint]" OpenMode="Never" ScopeGuid="5b549997-fb05-4bfa-a9d2-dbe29edb9077" Timeout="30" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 1920, 1040" FilePath="C:\Program Files (x86)\QlickPrint\qlickprint.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAICSURBVFhH7VdNSwJRFB0IxIV7C9u1jeo/jL9GQfsXfezKygSzokWKW3e1CAo3bSpC/CgqiCjzo40ao1575+WzGRlExzcJ0YEDOnPfPefdGd7cqwg4nU6FiLyM14x2Abm90DJAVdUZdiPJqCHKZkAjCU0u3t05xDna7TY1mk2qaZpUIidy65Dkleh0Oig733m10aDgyTl5tg5JWdmWSuREbmh0AU0VBm7wr9VqUfD0wnSxTMJE66cS1zDQwa+G1mQuD0wXySQ0oCXQM1Bnz8lswdTqDjnWwpaItWY5oSUw0MBc+IgSmTylCg+WiLXI0Z93KANwn8gUeNA4QI7+SgxlwLG+S6m7Rx40DpADufS5LRnI5XIUCATI5/MNJGIQKyDNABKzc2soIlZAmgG/398TYCcYuVwuA3FN3EesgHQDEIpEIpROpw3ENWHCVgPYLQT7gWu492/g7xuY+EsoTGC3egpx2wxM/CCa+FFsFVevRfKEjI3OUAZkfY7RiGZLZXJvxkYzAI7TkOTLVS4gcPb0TNOh/dEMgFZbsoVonN5rdS4CoBL3lQ9yb8TMDdjRlC7txem2WOJCApcvb6SxDlwABmxty+ejx2wW+ORiJuBtuWEwWWZ9+6zkwWSRVSJbqkBCD2iqvzaaNXVl7+J7NAMmOpwKwA0eB94JRruA3LrxXFG+AGFA4Nfeh0YqAAAAAElFTkSuQmCC" InformativeScreenshot="467b4d513c16e45b19eee4bcdc809519.png" Selector="&lt;wnd app='qlickprint.exe' cls='TfrmMain' title='QlickPrint - NL - [Template Bon]' /&gt;" Title="QlickPrint - NL - [Template Bon]" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
